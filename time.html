@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЭФЛАРА ЧАСОДЕИ | Магический Канал ТГК</title>
+    <meta name="description" content="Погрузитесь в волшебный мир Часодеев Натальи Щербы: Цапфа, Драголис, Змиулан, Лунопташки. Откройте для себя творчество фанатов, фанфики, арты и эксклюзивные обсуждения на нашем Telegram-канале.">
+    <meta name="keywords" content="часодеи, часодеи каналы, эфлара, наталья щерба, книги часодеи, фанфики часодеи, цитаты часодеи, мир часодеев, телеграм часодеи, часодеи тгк, цапфа, драголис, змиулан, лунопташки, фэнтези, магия">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+    <style>
+        /* Общие стили для всего тела страницы */
+        body {
+            font-family: 'Merriweather', serif;
+            background-color: #000000; /* Чёрный фон страницы */
+            color: #333;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        /* Контейнер для содержимого (ваше "окошко") */
+        .content-wrapper {
+            background-color: rgba(255, 255, 255, 0.95); /* Остаётся полупрозрачным белым */
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1); /* Тень темнее для чёрного фона */
+            padding: 40px;
+            max-width: 850px;
+            width: 100%;
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+
+        /* Анимация появления контента */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Стиль для заголовка: по центру, курсивом, красным цветом (не ярким) */
+        .main-title {
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            font-style: italic;
+            color: #8B0000; /* Темно-красный цвет */
+            font-size: 3.2em;
+            margin-bottom: 30px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Тень текста чуть темнее */
+        }
+
+        /* Стиль для основного текста: мелким шрифтом, черным, обычным */
+        .description-text {
+            font-size: 1em;
+            color: #333;
+            line-height: 1.8;
+            margin: 0 auto 40px auto;
+            text-align: justify;
+            padding: 0 20px;
+        }
+        .description-text p {
+            margin-bottom: 1.5em;
+            text-indent: 3em;
+        }
+
+        /* Кнопка-ссылка на Telegram-канал */
+        .button-section {
+            margin-top: 30px;
+        }
+        .telegram-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #007bff, #00c6ff);
+            color: white;
+            padding: 16px 35px;
+            text-decoration: none;
+            border-radius: 40px;
+            font-weight: bold;
+            font-size: 1.3em;
+            letter-spacing: 1px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.3); /* Тень темнее */
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .telegram-button:hover {
+            background: linear-gradient(45deg, #0056b3, #0099e6);
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5); /* Усиленная тень */
+        }
+        .telegram-button:active {
+            transform: translateY(0) scale(1);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+        }
+        
+        /* Эффект блика на кнопке при наведении */
+        .telegram-button::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            transform: skewX(-30deg);
+            transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        .telegram-button:hover::after {
+            left: 100%;
+        }
+
+        /* Стиль для приписки "У нас есть Енот" */
+        .raccoon-note {
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            font-size: 0.8em;
+            color: #AAAAAA; /* Чуть светлее серый для чёрного фона */
+            opacity: 0.8; /* Чуть менее прозрачный */
+            z-index: 1000;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Тёмная тень для светлого текста */
+        }
+
+
+        /* Адаптивность для маленьких экранов */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+            .content-wrapper {
+                padding: 25px 15px;
+                margin: 0 10px;
+            }
+            .main-title {
+                font-size: 2.2em;
+            }
+            .description-text {
+                font-size: 0.85em;
+                padding: 0 5px;
+            }
+            .description-text p {
+                text-indent: 2em;
+            }
+            .telegram-button {
+                font-size: 1em;
+                padding: 10px 20px;
+            }
+            .raccoon-note {
+                font-size: 0.7em;
+                bottom: 10px;
+                right: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <div class="main-title">
+            ЭФЛАРА ЧАСОДЕИ || ТГК
+        </div>
+
+        <div class="description-text">
+            <p>Эфлара... звучит красиво, согласитесь? Наталья Щерба позаботилась о том, чтобы нам снились милые чаепития в Цапфе, прогулки по загадочному Драголису, где мы, наверняка, заблудимся, прохождения лабиринтов Змиулана с Захаррой, эксклюзивные уроки кулинарии с Жан Жаком, а также полеты наравне с ночным ветерком на Лунопташках.</p>
+            <p>Вот только книга заканчивается, страницы уже листаешь только ради любимых, завораживающих моментов. Но есть в нашем мире уголки, где эти самые страницы оживают. В уголках этих живут художники, поэты, эдиторы, а также ребята, которые дарят им вдохновение творить.</p>
+            <p>Один из таких уголков носит одноименное название с Часодейной планетой. Зайдешь попить чаролад?)</p>
+        </div>
+
+        <div class="button-section">
+            <a href="https://t.me/chasikief" class="telegram-button" target="_blank" rel="noopener noreferrer">ПЕРЕХОД</a>
+        </div>
+    </div>
+
+    <div class="raccoon-note">
+        У нас есть Енот
+    </div>
+</body>
+</html>
